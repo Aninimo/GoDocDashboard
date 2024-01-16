@@ -8,7 +8,7 @@ import prismadb from '../../lib/prismadb'
 import { NoteProps } from '../../interfaces'
 
 interface Props{
-  notes: NoteProps[];
+  notes: NoteProps;
 }
 
 export default function NotePage({ notes }: Props) {
@@ -38,6 +38,10 @@ export default function NotePage({ notes }: Props) {
     }
   };
 
+  const handleClose = () => {
+    setCreateTitle(false);
+  }
+
   return (
     <main className='p-4'>
       <div className='flex justify-between'>
@@ -53,7 +57,7 @@ export default function NotePage({ notes }: Props) {
       {createTitle ? (
         <div >
           <div className='w-64 flex flex-col bg-blue-300 p-8 rounded mt-4 mb-4'>
-            <button>
+            <button onClick={handleClose}>
               <X />
             </button>
               <input
@@ -74,7 +78,6 @@ export default function NotePage({ notes }: Props) {
       <div>
         {notes.map((note) => (
            <Link 
-             key={note.id}
              href={`/notes/${note.id}`}
              className='flex gap-2 text-2xl mt-4 mb-8'>
             <span className='text-blue-400'>●</span> {note.title}

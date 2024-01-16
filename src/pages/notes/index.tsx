@@ -79,6 +79,7 @@ export default function NotePage({ notes }: Props) {
         {notes.map((note) => (
            <Link 
              href={`/notes/${note.id}`}
+             key={note.id}
              className='flex gap-2 text-2xl mt-4 mb-8'>
             <span className='text-blue-400'>●</span> {note.title}
           </Link>

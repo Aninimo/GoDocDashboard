@@ -8,7 +8,7 @@ import prismadb from '../../lib/prismadb'
 import { NoteProps } from '../../interfaces'
 
 interface Props{
-  notes: NoteProps;
+  notes: NoteProps[];
 }
 
 export default function NotePage({ notes }: Props) {

@@ -13,6 +13,21 @@ View and edit detailed information for each patient.
 
 Add and remove appointments easily.
 
+● Clinical Notes:
+
+Ability to take important notes for each patient.
+Accessible note history for quick reference.
+
+● Statistical Graph:
+
+Visual presentation of the number of patients seen during the month.
+Useful tool for performance analysis and planning.
+
+● Secure Login with Clerk:
+
+Robust authentication system to ensure data security.
+Personalized access for authorized doctors.
+
 # Stacks
 ● NextJs
 ● Typescript

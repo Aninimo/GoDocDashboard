@@ -12,3 +12,12 @@ View and edit detailed information for each patient.
 ● Medical Appointments:
 
 Add and remove appointments easily.
+
+# Stacks
+● NextJs
+● Typescript
+● TailwindCss
+● Prisma 
+● MongoDB
+● Clerk
+● Jest
